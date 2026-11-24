@@ -1,0 +1,16 @@
+{
+  "scope": "All amounts, cases, dates, and return samples are invented; no brokerage, live market or private input.",
+  "zero": {"amount": 105, "terminal_year": 1, "annual_rate": "0.05"},
+  "monthly": {"rows_start_end_distribution": [[100, 103, 2], [103, 95, 0]]},
+  "wealth": [100, 110, 99, 121, "96.80", "101.64"],
+  "coupon_bond": {"receipts": [[1, 6], [2, 106]], "annual_yield": "0.05"},
+  "fund": {"nav": ["50.00", "50.10"], "price": ["50.30", "49.80"]},
+  "operation": {"receipts": [[0,-90],[1,30],[2,35],[3,45]], "annual_rate": "0.08"},
+  "margin": {"start_asset": 1000, "loan": 400, "asset_levels": [750,650], "maintenance": "0.40"},
+  "option": {"spot": 100, "up": 120, "down": 80, "strike": 100, "gross": "1.05"},
+  "paired": {"row_ids": ["P1","P2","P3","P4"], "A_pp": [-8,-2,6,12], "B_pp": [6,-6,10,-2]},
+  "portfolio": {"means": ["0.05","0.10"], "standard_deviations": ["0.12","0.20"], "correlations": ["-0.25","0.75"], "B_weights": ["0.20","0.40","0.50","0.60"], "min_B":"0.20","max_B":"0.50","min_mean":"0.07"},
+  "market_factor": {"X_pp": [-4,-2,2,4], "Y_pp": [-4,-3,3,4], "annual_riskfree":"0.03", "annual_market_expected":"0.08", "beta_scenario":"1.2"},
+  "statements": {"opening":{"cash":60,"ar":40,"inventory":70,"ppe":210,"ap":35,"equity":345}, "closing":{"ar":52,"inventory":66,"ap":35}, "sales":300,"opex":215,"depreciation":20,"cash_tax":"0.25","capex":38,"distribution":10,"pricing_rate":"0.10"},
+  "assessment": {"capital":1000, "bond_unit_cost":100, "equity_unit_cost":100,"bond_terminal_cash":105,"equity_high":130,"equity_low":85,"floor":980,"candidates":{"A":[6,4],"B":[8,2]}}
+}
