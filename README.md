@@ -6,7 +6,17 @@ For MBA or advanced undergraduate learners comfortable with present value, retur
 
 Start with a financial question and a dated hand check. Implement the same contract in Excel or Python. Use the other representation or a genuinely independent simple calculation to find what the first one missed. Discuss exactly which result would change the decision, and which facts the setup doesn't know. The flawed answers labeled in the chapters are fabricated for practice.
 
-## Build and inspect the instrument model
+## Learning outcomes
+
+After working through this draft, readers should be able to:
+
+- Build and check numerical models for instruments, valuation, and sensitivity.
+- Estimate portfolio and derivative risk under stated model assumptions and test edge cases.
+- Reconcile the same model contract across a checked Python implementation and a spreadsheet recipe, then defend the result.
+
+## Chapters
+
+### Build and inspect the instrument model
 
 - 01. [Specify the Financial Question Before Building the Model](chapters/01-specify-the-financial-question.md)
 - 02. [Reconstruct the Return Before Scaling the Risk](chapters/02-reconstruct-returns-and-risk.md)
@@ -16,14 +26,14 @@ Start with a financial question and a dated hand check. Implement the same contr
 - 06. [Separate Asset Risk From Account Risk](chapters/06-separate-asset-and-account-risk.md)
 - 07. [Replicate an Option Before Pricing Its Story](chapters/07-replicate-an-option-payoff.md)
 
-## Measure risk in portfolios
+### Measure risk in portfolios
 
 - 08. [Pair the Observations Before Measuring Diversification](chapters/08-pair-the-observations.md)
 - 09. [Build and Stress the Feasible Set](chapters/09-build-and-stress-the-feasible-set.md)
 - 10. [Allocate the Risky Budget, Then Rebalance the Holdings](chapters/10-allocate-and-rebalance.md)
 - 11. [Price Exposure, Not Certainty](chapters/11-price-exposure-not-certainty.md)
 
-## Reconcile and defend the decision
+### Reconcile and defend the decision
 
 - 12. [Connect Statements to the Forecast, Not to a Headline](chapters/12-connect-statements-to-the-forecast.md)
 - 13. [Defend the Model When the Attractive Answer Fails](chapters/13-defend-the-model-when-it-fails.md)
