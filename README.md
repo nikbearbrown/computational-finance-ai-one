@@ -1,51 +1,38 @@
 # Computational Finance (AI Plus One)
 
-**Status:** Original compact course rough 0.1
-
 ## About the book
 
-Thirteen chapters, shared synthetic cases and a reproducible capstone. Not an expert-edited replacement for an existing book or an adopted course.
+This 13-chapter compact rough draft is for MBA or advanced undergraduate readers who know present value, returns and either Excel or introductory Python. Learn to specify a financial model, build it in one tool, and check its output independently before defending an instrument, risk or portfolio decision. It uses fictional cases, not live trading or a hosted AI service.
 
-For MBA or advanced undergraduate learners comfortable with present value, returns and either Excel or introductory Python. This is one book about building a defensible instrument, risk or portfolio model. It is not an introduction to personal finance, an inside-the-firm corporate capital-allocation book, a programming manual or a trading guide. No live trading, hosted AI, account connection, real financial data or personalized advice is part of the exercises.
+## Start reading
 
-Start with a financial question and a dated hand check. Implement the same contract in Excel or Python. Use the other representation or a genuinely independent simple calculation to find what the first one missed. Discuss exactly which result would change the decision, and which facts the setup doesn't know. The flawed answers labeled in the chapters are fabricated for practice.
+Start with [Specify the Financial Question Before Building the Model](chapters/01-specify-the-financial-question.md). Use the [complete chapter guide](chapters/README.md) to find every chapter in reading order.
 
-## Learning outcomes
+## Chapter guide
 
-- Build and check numerical models for instruments, valuation, and sensitivity.
-- Estimate portfolio and derivative risk under stated model assumptions and test edge cases.
-- Reconcile the same model contract across a checked Python implementation and a spreadsheet recipe, then defend the result.
+[Complete chapter guide](chapters/README.md).
 
-## Read the book
+## How to teach or study it
 
-Start with [Specify the Financial Question Before Building the Model](chapters/01-specify-the-financial-question.md) or browse the [chapters folder](chapters/).
+Start with a dated hand calculation. The model sequence moves through instruments, portfolio risk and a reconciled forecast so that the final [analyst model packet](assessment/analyst-model-packet.md) can be challenged by a reviewer. Use the [two-implementation lab](labs/two-implementations.md) to check units, dates and constraints in Excel or Python. Python checks were run; the Excel recipes have not been run in Excel.
 
-### Build and inspect the instrument model
+## What’s in this repo
 
-1. [Specify the Financial Question Before Building the Model](chapters/01-specify-the-financial-question.md)
-2. [Reconstruct the Return Before Scaling the Risk](chapters/02-reconstruct-returns-and-risk.md)
-3. [Price the Claim, Not the Label](chapters/03-price-the-specified-claim.md)
-4. [Separate Portfolio Value From the Fund's Trading Price](chapters/04-separate-fund-nav-from-price.md)
-5. [Keep Time Zero Out of the Future-Value Loop](chapters/05-keep-time-zero-out-of-the-loop.md)
-6. [Separate Asset Risk From Account Risk](chapters/06-separate-asset-and-account-risk.md)
-7. [Replicate an Option Before Pricing Its Story](chapters/07-replicate-an-option-payoff.md)
+| Resource | Link | Coverage | Status |
+| --- | --- | --- | --- |
+| Manuscript | [README.md](chapters/README.md) | 13 written chapters | Compact rough draft |
+| Exercises and assessment | [two-implementations.md](labs/two-implementations.md), [analyst-model-packet.md](assessment/analyst-model-packet.md) | 1 cross-tool lab and 1 capstone | Draft |
+| Code | [check_models.py](scripts/check_models.py) | 1 Python checker | Included |
+| Datasets | [synthetic-labs.json](data/synthetic-labs.json) | 1 fictional JSON case collection | Included |
+| Blueprint or syllabus | — | — | Not found |
+| Slides | — | — | Not found |
+| Standalone quizzes | — | — | Not found |
+| Separate answer-key file | — | — | Not found |
+| Figure assets | — | — | Not found |
+| Videos | — | — | Not found |
+| Excel workbook or other export | — | — | Not found |
+| Web edition | — | — | Not found |
 
-### Measure risk in portfolios
+## Credits, license, and corrections
 
-8. [Pair the Observations Before Measuring Diversification](chapters/08-pair-the-observations.md)
-9. [Build and Stress the Feasible Set](chapters/09-build-and-stress-the-feasible-set.md)
-10. [Allocate the Risky Budget, Then Rebalance the Holdings](chapters/10-allocate-and-rebalance.md)
-11. [Price Exposure, Not Certainty](chapters/11-price-exposure-not-certainty.md)
-
-### Reconcile and defend the decision
-
-12. [Connect Statements to the Forecast, Not to a Headline](chapters/12-connect-statements-to-the-forecast.md)
-13. [Defend the Model When the Attractive Answer Fails](chapters/13-defend-the-model-when-it-fails.md)
-
-## Resources
-
-- [Excel and Python recipes](labs/two-implementations.md): same inputs, same outcomes, practical checks. Spreadsheet steps are recipes, not a bundled or runtime-tested workbook.
-- [Synthetic inputs](data/synthetic-labs.json) and [the offline Python check](scripts/check_models.py). Standard library only: `python3 -I -B scripts/check_models.py`. It validates the case computations, not the appropriateness of their assumptions or another tool's results.
-- [Analyst model packet and scoring rubric](assessment/analyst-model-packet.md): dated valuation, budget, two modeled states, exact boundaries, independent verification and an unaided decision defense.
-
-The course rough remains subject to deeper examples, expert editing, format and accessibility testing, and any separate adoption decision.
+No license file was found; public access does not establish reuse rights. Report errors in the [repository issues](https://github.com/nikbearbrown/computational-finance-ai-one/issues), with the chapter and a precise location.
